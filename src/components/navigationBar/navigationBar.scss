@@ -1,0 +1,27 @@
+.navigation-bar-container{
+    display: flex;
+    justify-content: space-between;
+    font-size: 3rem;
+    padding: 1.5rem 3.9rem 0 3.9rem;
+    z-index: 20;
+    position: fixed;
+    right: 0;
+    left: 0;
+    background-color: #4299E1;
+
+    .navigation-bar-left-component{
+        font-weight: bold;
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+
+    .navigation-bar-right-component{
+        display: flex;
+        gap: 4.4rem;
+
+        .navigation-bar-right-component-item{
+            font-weight: 200;
+        }
+    }
+}

@@ -1,0 +1,27 @@
+.experience-card-item{
+    max-width: 92.625rem;
+    
+    .experience-card-item-title{
+        font-size: 2.5rem;
+        font-weight: bold;
+    }
+    .experience-card-item-instance, .experience-card-item-year{
+        font-size: 1.3rem;
+        font-weight: 100;
+        text-align: end;
+    }
+    .experience-card-item-desc{
+        margin:1rem 0 1rem 0;
+        font-size: 1.5rem;
+        text-align: justify;
+    }
+    .experience-card-item-point-list{
+        margin: 0 0 2rem 0;
+        font-size:1.3rem;
+    }
+
+    .experience-card-item-border{
+        background-color: white;
+        height: 7px;
+    }
+}

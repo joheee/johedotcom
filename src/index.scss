@@ -1,0 +1,25 @@
+a{
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  background-color: #4299E1;
+  margin: 0;
+  font-family: 'Poppins';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: white;
+  box-sizing: border-box;
+  overflow-x:hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.hover-nav-bar:hover{
+  color: rgba(255,255,255, 0.5);
+  cursor: pointer;
+}

@@ -1,0 +1,47 @@
+.project-card-item{
+    background-color: rgba(255,255,255,0.5);
+    padding: 2rem;
+    border-radius: 1.875rem;
+    backdrop-filter: blur(10px);
+    max-width: 32rem;
+    min-width: 32rem;
+
+    .project-card-item-title{
+        font-size: 2.5rem;
+        font-weight: 800;
+    }
+    .project-card-item-date{
+        font-size: 1.2rem;
+        font-weight: normal;
+        margin-bottom: 0.8rem;
+        text-align: end;
+    }
+    .project-card-item-github, .project-card-item-host{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        font-size: 1.5rem;
+        .project-card-item-github-link , .project-card-item-host-link{
+            text-decoration: underline;
+        }
+    }
+
+    .project-card-item-language-container{
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-top: 1rem;
+        .project-card-item-language-item{
+            color: #4299E1;
+            background-color: white;
+            padding: 0.5rem 1rem 0.5rem 1rem;
+            border-radius: 0.9rem;
+        }
+    }
+
+}
+
+.set-not-fill {
+    display: inline-block;
+}

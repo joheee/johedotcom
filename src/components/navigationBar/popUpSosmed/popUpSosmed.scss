@@ -1,0 +1,13 @@
+.pop-up-sosmed-container{
+    background-color: white;
+    border-radius: 1.25rem;
+    color: #4299E1;
+    padding: 2rem;
+    position: absolute;
+    display: flex;
+    gap: 3.9rem;
+    top: 100px;
+    .fa-instagram, .fa-linkedin, .fa-youtube{
+        color: #4299E1;
+    }
+}
