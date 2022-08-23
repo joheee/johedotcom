@@ -1,1 +1,1 @@
-export const quotes = ['fortis fortuna adiuvat', 'go for it!', 'escape the ordinary','never settle']
+export const quotes = ['now or never!', 'go for it!', 'ride or die!','never settle!']

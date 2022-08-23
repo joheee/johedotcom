@@ -23,14 +23,14 @@ export const ProjectCard = ({project} : projectProps) => {
             <div className="project-card-item-date">
                 {new Date(project.createdAt).toLocaleDateString('pt-PT')}
             </div>
-            <a href={project.url} className="set-not-fill hover-nav-bar" target='_blank'>
+            <a href={`//${project.url}`} className="set-not-fill hover-nav-bar" target='_blank'>
                 <div className="project-card-item-github">
                     <div className="project-card-item-github-icon fa-brands fa-github"></div>
                     <div className="project-card-item-github-link">{project.name} repository</div>
                 </div>
             </a>
             <br />
-            <a href={project.homepageUrl} className="set-not-fill hover-nav-bar" target='_blank'>
+            <a href={`//${project.homepageUrl}`} className="set-not-fill hover-nav-bar" target='_blank'>
                 <div className="project-card-item-host">
                     <div className="project-card-item-host-icon fa-solid fa-globe"></div>
                     <div className="project-card-item-host-link">{project.name} hosting</div>

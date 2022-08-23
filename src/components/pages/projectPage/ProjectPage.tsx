@@ -10,7 +10,7 @@ export const ProjectPage = () => {
     
     if(!loading){
         return (
-            <div className="project-page-container" id="projectPage">
+            <div className="project-page-container"  id="projectPage">
                 <div className="project-page-title">
                     my project
                 </div>

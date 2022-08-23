@@ -1,1 +1,1 @@
-export const GITHUB_ACCESS_TOKEN="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"
+export const GITHUB_ACCESS_TOKEN="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"

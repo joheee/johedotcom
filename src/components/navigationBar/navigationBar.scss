@@ -25,3 +25,16 @@
         }
     }
 }
+
+@media only screen and  (max-width:700px){
+    .navigation-bar-container{
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 1.5rem 0 0 0;
+
+        .navigation-bar-right-component {
+            gap: 2rem;
+            justify-content: center;
+        }
+    }
+}

@@ -5,6 +5,11 @@
     justify-content: center;
     align-items: center;
     font-size: 8rem;
-    text-align: center;
     font-weight: bold;
+}
+
+@media only screen and  (max-width:700px){
+    .display-quote-container {
+        font-size: 3.5rem;
+    }
 }
