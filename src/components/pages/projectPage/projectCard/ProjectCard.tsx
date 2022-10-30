@@ -14,7 +14,6 @@ const ProjectCardLang = (prop: any) => {
 }
 
 export const ProjectCard = ({project} : projectProps) => {
-
     return (
         <div className="project-card-item">
             <div className="project-card-item-title">
@@ -30,12 +29,15 @@ export const ProjectCard = ({project} : projectProps) => {
                 </div>
             </a>
             <br />
-            <a href={project.homepageUrl.indexOf("https://") !== 0 ? `https://${project.homepageUrl}` : `${project.homepageUrl}`} className="set-not-fill hover-nav-bar" target='_blank' rel="noreferrer">
-                <div className="project-card-item-host">
-                    <div className="project-card-item-host-icon fa-solid fa-globe"></div>
-                    <div className="project-card-item-host-link">{project.name} hosting</div>
-                </div>
-            </a>
+            {
+                project.homepageUrl === null ? null :
+                <a href={project.homepageUrl!.indexOf("https://") !== 0 ? `https://${project.homepageUrl}` : `${project.homepageUrl}`} className="set-not-fill hover-nav-bar" target='_blank' rel="noreferrer">
+                    <div className="project-card-item-host">
+                        <div className="project-card-item-host-icon fa-solid fa-globe"></div>
+                        <div className="project-card-item-host-link">{project.name} hosting</div>
+                    </div>
+                </a>
+            }
 
             <div className="project-card-item-language-container">
                 {project.languages.nodes.length !== 0 ?
