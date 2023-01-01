@@ -1,0 +1,24 @@
+@import 'imports';
+
+.recentPostContainer {
+    background-color: $postColor;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    padding: 2em 1em;
+    
+    .recentPostTitle{
+        font-weight: 200;
+        font-size: clamp(1em, 7vw, 1.5em);
+    }
+    
+    .cardPostContainer {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 1em;
+    }
+}

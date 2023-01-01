@@ -1,0 +1,49 @@
+$primaryColor: #ffffff;
+$secondaryColor: #21243D;
+$accentColor: #4299E1;
+$extraFontColor: #8695A4;
+$postColor: #EDF7FA;
+
+$globalBorderRadius: .5em;
+$inputBorderRadius: 6px;
+$buttonBorderRadius: .25em;
+$defaultFontSize: 20px;
+
+.navbarButton {
+    cursor: pointer;
+    user-select: none;
+    &:hover {
+        color: $accentColor;
+    }
+}
+
+.resumeButton {
+    background-color: $accentColor;
+    color: $primaryColor;
+    padding: .5em 1em;
+    border-radius: $buttonBorderRadius;
+    cursor: pointer;
+    user-select: none;
+    width: fit-content;
+    font-size: clamp(.5em, 6vw, 1em);
+    &:hover{
+        background-color: rgba($color: $accentColor, $alpha: 0.8);
+        color: rgba($color: $primaryColor, $alpha: 0.8);
+    }
+}
+
+.ContactInput {
+    display: grid;
+    gap: .2em;
+    font-weight: 300;
+    font-size: .7em;
+
+    input, textarea {
+        font-weight: 400;
+        font-size: 1em;
+        border-radius: $inputBorderRadius;
+        background-color: transparent;
+        border: 1px solid $accentColor;
+        padding: .4em .5em;
+    }
+}

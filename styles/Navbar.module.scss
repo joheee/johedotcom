@@ -1,0 +1,91 @@
+@import 'imports';
+
+.navbarContainer{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 2em;
+    font-weight: 500;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    background-color: $primaryColor;
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,.2);
+    
+    .navbarInnerContainer{
+        display: flex;
+        gap: 2em;
+        
+    .navbarButton{
+        display: flex;
+        align-items: center;
+        }
+    }
+    .navbarInnerContainerMobile{
+        display: none;
+    }
+    @include devicesTablet{
+        .navbarInnerContainer{
+            display: none;
+        }
+        .navbarInnerContainerMobile{
+            display: block;
+        }
+    }
+}
+
+.navbarMobileContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: fixed;
+    background-color: rgba($color: $primaryColor, $alpha: .5);
+    backdrop-filter: blur(.3em);
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 0 1rem;
+
+    .navbarMobileExitLogoContainer{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        .navbarMobileExitButton{
+            padding-right: 1em;
+        }
+        .navbarButton{
+            width: fit-content;
+        }
+    }
+    
+    .navbarButton{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding: 1em;
+
+        .navbarIconSetup{
+            margin: 0 1rem 0 0;
+            width: 40px;
+        }
+
+        .navbarLogoSetup{
+            margin: 0 1rem 0 0;
+            width: 60px;
+        }
+    }
+
+    .navbarMobileOtherButtonContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: .25rem;
+        height: 100%;
+        width: 100%;
+
+        
+    }
+}

@@ -1,0 +1,74 @@
+@import 'imports';
+
+.featuredWorkCard{
+    img {
+        border-radius: $globalBorderRadius;
+        height: fit-content;
+    }
+
+    @include devicesDesktop {
+        img {
+            width: 250px;
+        }
+    }
+    
+    @include devicesTablet {
+        img {
+            width: 20em;
+        }
+    }
+    
+    @include devicesMobile {
+        img {
+            width: 100%;
+        }
+    }
+    
+    width: clamp(0em, 90vw, 64em);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+
+    .featureWorkTextContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .featureWorkTextYearContainer{
+            display: grid;
+
+            .featureWorkTextTitle{
+                font-weight: bold;
+                font-size: clamp(10px, 6.5vw, 1.4em);
+            }
+            
+            .featureWorkTextYearTitleContainer{
+                display: flex;
+                gap: 1.625em;
+                font-weight: 200;
+
+                .featureWorkTextYearTitleItem{
+                    font-size: clamp(10px, 4.5vw, 1em);
+                }
+            }
+        }
+
+        .featureWorkTextDescription {
+            font-size: clamp(10px, 4.5vw, 1em);
+        }
+
+        @include devicesDesktop {
+            width: clamp(250px, 51vw, 48em);
+        }
+        
+        @include devicesTablet {
+            width: 20em;
+        }
+        
+        @include devicesMobile {
+            width: 100%;
+        }
+    }
+}

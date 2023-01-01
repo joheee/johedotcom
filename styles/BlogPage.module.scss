@@ -1,0 +1,19 @@
+@import 'imports';
+
+.navbarHeight {
+    width: 100vw;
+    height: 120px;
+}
+
+.blogPageTitle {
+    font-weight: 200;
+    font-size: clamp(1em, 7vw, 1.5em);
+    text-align: center;
+    padding-top: 37.5px;
+}
+
+.blogCardOuterContainer{
+    display: grid;
+    grid-template-columns: clamp(1em, 85vw, 60em);
+    justify-content: center;
+}

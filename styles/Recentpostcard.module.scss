@@ -1,0 +1,30 @@
+@import 'imports';
+
+.recentPostCardContainer {
+    background-color: $primaryColor;
+    padding: 1.25em;
+    border-radius: $globalBorderRadius;
+    min-height: fit-content;
+    flex: 0 1 20em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    
+    .recentPostCardTitle{
+        font-weight: bold;
+        font-size: clamp(10px, 6.5vw, 1.4em);
+    }
+
+    .recentPostCardDateContainer{
+        display: flex;
+        gap: clamp(.1em, 3vw, 1em);
+
+        .recentPostCardDateItem{
+            font-size: clamp(10px, 4.5vw, 1em);
+            font-weight: 200;
+        }
+    }
+    .recentPostCardDesc{
+        font-size: clamp(10px, 4.5vw, 1em);
+    }
+}
